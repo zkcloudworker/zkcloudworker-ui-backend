@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/workers": {
+      "name": "/workers",
+      "lambdaFunction": "ddbQueryWorkersTable",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

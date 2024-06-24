@@ -1,0 +1,7 @@
+{
+  "queryStringParameters": {
+    "table": "deployers",
+    "scan": "chain",
+    "value": "devnet"
+  }
+}

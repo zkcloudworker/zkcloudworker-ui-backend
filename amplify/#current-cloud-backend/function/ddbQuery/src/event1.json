@@ -1,0 +1,7 @@
+{
+  "queryStringParameters": {
+    "table": "workers",
+    "scan": "developer",
+    "value": "*"
+  }
+}

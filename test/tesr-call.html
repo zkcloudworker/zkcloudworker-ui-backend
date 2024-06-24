@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API CORS Test</title>
+</head>
+<body>
+    <h1>Fetch API CORS Test</h1>
+    <button id="fetchButton">Fetch Data</button>
+    <pre id="result"></pre>
+
+    <script>
+      function fetchGet() {
+          const endpoint = "https://w0559i4260.execute-api.eu-west-1.amazonaws.com/dev/queries/get_accounts";
+          const apikey = "XXXX"
+          const qparams = { params: '{"id":"B62qXXXX"}' };
+          const baseUrl = endpoint; // Replace with your URL
+          const params = new URLSearchParams(qparams).toString();
+          const url = `${baseUrl}?${params}`;
+          const headers = {
+              'Content-Type': 'application/json',
+              'x-api-key': apikey 
+          };
+
+          fetch(url, {
+              method: 'GET', // Change to 'POST' or other methods as needed
+              headers: headers
+          })
+          .then(response => {
+              if (!response.ok) {
+                console.log(error);
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+          })
+          .then(data => {
+            console.log("tryFetch ", JSON.stringify(data, null, 2));
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
+
+      function fetchPost() {
+          const endpoint = "https://w0559i4260.execute-api.eu-west-1.amazonaws.com/dev/mutations/signup";
+          const apikey = "XXXX"
+          const qparams = { "id":"B62qXXXX" };
+          const baseUrl = endpoint; // Replace with your URL
+          const params = new URLSearchParams(qparams).toString();
+          const url = `${baseUrl}?${params}`;
+          const headers = {
+              'Content-Type': 'application/json',
+              'x-api-key': apikey 
+          };
+
+          fetch(url, {
+              method: 'POST', // Change to 'POST' or other methods as needed
+              headers: headers,
+              body: JSON.stringify(params)
+          })
+          .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+          })
+          .then(data => {
+            console.log("tryFetch ", JSON.stringify(data, null, 2));
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
+
+      document.getElementById('fetchButton').addEventListener('click', () => {
+        //fetchGet();
+        fetchPost();
+      });
+    </script>
+</body>
+</html>

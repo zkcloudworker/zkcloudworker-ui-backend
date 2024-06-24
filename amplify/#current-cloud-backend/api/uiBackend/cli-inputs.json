@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/queries": {
+      "name": "/queries",
+      "lambdaFunction": "uiQueries",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/mutations": {
+      "name": "/mutations",
+      "lambdaFunction": "uiMutations",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

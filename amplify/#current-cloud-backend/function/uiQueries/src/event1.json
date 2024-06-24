@@ -1,0 +1,8 @@
+{
+  "pathParameters": {
+    "proxy": "get_accounts"
+  },  
+  "queryStringParameters": {
+    "params": "{\"id\": \"B62qpbqLB1pabZUu4oaDKFmv72DtHWnFxGK8aucNZHxS1cDmmsrrpVp\"}"
+  }
+}

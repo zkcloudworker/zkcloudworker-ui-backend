@@ -1,0 +1,72 @@
+{
+  "api": {
+    "uiBackend": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "uiQueries"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "uiMutations"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "uiMutations": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "uiQueries": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_uiMutations_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "uiMutations"
+        }
+      ]
+    },
+    "AMPLIFY_function_uiMutations_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "uiMutations"
+        }
+      ]
+    },
+    "AMPLIFY_function_uiQueries_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "uiQueries"
+        }
+      ]
+    },
+    "AMPLIFY_function_uiQueries_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "uiQueries"
+        }
+      ]
+    }
+  }
+}

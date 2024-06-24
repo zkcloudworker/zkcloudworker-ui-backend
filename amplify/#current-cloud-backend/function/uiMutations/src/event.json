@@ -1,0 +1,6 @@
+{
+  "pathParameters": {
+    "proxy": "signup"
+  },  
+  "body": "{\"id\":\"XX02\",\"signed\":\"---\"}"
+}

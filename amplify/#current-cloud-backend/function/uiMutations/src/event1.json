@@ -1,0 +1,6 @@
+{
+  "pathParameters": {
+    "proxy": "update_account"
+  },  
+  "body": "{\"id\":\"XX02\",\"signed\":\"---\",\"email\":\"jp01@zkcw.com\",\"alias\":\"JP01\",\"fullName\":\"Juan Perez\",\"preferences\":\"{}\"}"
+}
