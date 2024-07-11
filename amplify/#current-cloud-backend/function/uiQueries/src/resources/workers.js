@@ -4,18 +4,32 @@ const dynamodb = new AWS.DynamoDB();
 exports.getWorkers = getWorkers;
 
 async function getWorkers(params, user) {
-  const { developer } = params;
+  const { developer, repos } = params;
 
-  // SQL-like query to select all developers
-  const query = `SELECT * FROM "workers" WHERE "developer" = ?`;
-  const queryParams = {
-    Statement: query,
-    Parameters: [{
+  console.log("repos: ", repos);
+
+  let query = "";
+  let queryParams = {};
+
+  if (developer) {
+    // SQL-like query to select workers of a given developer
+    query = `SELECT * FROM "workers" WHERE "developer" = ?`;
+    queryParams = {
+      Statement: query,
+      Parameters: [{
         S: developer
-      } // Replace with your developer value
-    ]
-  };
+      }]
+    };
+  }
 
+  if (repos) {
+    // SQL-like query to select any worker that belong in a set of repos
+    query = `SELECT * FROM "workers" WHERE "repo" IN [${repos.map((t) => `'${t}'`).join(',')}]`;
+    queryParams = {
+      Statement: query
+    };
+  }
+  
   try {
     const data = await dynamodb.executeStatement(queryParams).promise();
     return {

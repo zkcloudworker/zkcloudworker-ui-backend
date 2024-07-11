@@ -15,7 +15,8 @@ async function signUp(params, user) {
           alias: 'Update profile',
           email: '',
           fullName: 'No Name',
-          preferences: '{}'
+          preferences: '{}',
+          discord: params.discord || ''
       }
   };
   console.log("signUp putParams: ", putParams);
@@ -74,7 +75,8 @@ async function updateAccount(params, user) {
           alias: params.alias,
           email: params.email,
           fullName: params.fullName,
-          preferences: params.preferences
+          preferences: params.preferences,
+          discord: params.discord || ''
       }
   };
   console.log("signUp putParams: ", putParams);

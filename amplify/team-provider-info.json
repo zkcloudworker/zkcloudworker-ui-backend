@@ -15,11 +15,11 @@
       "function": {
         "uiQueries": {
           "deploymentBucketName": "amplify-ampdemo-dev-31c28-deployment",
-          "s3Key": "amplify-builds/uiQueries-5a42564a6c374478536d-build.zip"
+          "s3Key": "amplify-builds/uiQueries-49614875434c4a444543-build.zip"
         },
         "uiMutations": {
           "deploymentBucketName": "amplify-ampdemo-dev-31c28-deployment",
-          "s3Key": "amplify-builds/uiMutations-704f737430597552755a-build.zip"
+          "s3Key": "amplify-builds/uiMutations-3358625a55492f6c3333-build.zip"
         }
       },
       "api": {

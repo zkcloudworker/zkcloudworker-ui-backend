@@ -17,20 +17,20 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
-      "lastDevBuildTimeStamp": "2024-06-23T19:44:52.467Z",
+      "lastDevBuildTimeStamp": "2024-07-11T22:29:24.010Z",
       "lastBuildType": "PROD",
-      "lastBuildTimeStamp": "2024-06-23T19:45:14.078Z",
-      "lastPackageTimeStamp": "2024-06-23T19:45:16.401Z",
-      "distZipFilename": "uiQueries-5a42564a6c374478536d-build.zip",
+      "lastBuildTimeStamp": "2024-07-11T22:40:11.193Z",
+      "lastPackageTimeStamp": "2024-07-11T22:40:14.698Z",
+      "distZipFilename": "uiQueries-49614875434c4a444543-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-ampdemo-dev-31c28-deployment",
-        "s3Key": "amplify-builds/uiQueries-5a42564a6c374478536d-build.zip"
+        "s3Key": "amplify-builds/uiQueries-49614875434c4a444543-build.zip"
       },
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-ampdemo-dev-31c28-deployment/amplify-cfn-templates/function/uiQueries-cloudformation-template.json",
         "logicalId": "functionuiQueries"
       },
-      "lastPushTimeStamp": "2024-06-24T02:35:26.925Z",
+      "lastPushTimeStamp": "2024-07-11T22:41:45.398Z",
       "output": {
         "LambdaExecutionRoleArn": "arn:aws:iam::058264205854:role/ampdemoLambdaRole7209ac61-dev",
         "Region": "eu-west-1",
@@ -38,7 +38,7 @@
         "Name": "uiQueries-dev",
         "LambdaExecutionRole": "ampdemoLambdaRole7209ac61-dev"
       },
-      "lastPushDirHash": "JM5tuhqce9sPB5gfF2Gam0FH0nM="
+      "lastPushDirHash": "87nGanIf7cVyrQO9fnR5kqteGtE="
     },
     "uiMutations": {
       "build": true,
@@ -46,18 +46,18 @@
       "service": "Lambda",
       "lastDevBuildTimeStamp": "2024-06-23T22:24:53.212Z",
       "lastBuildType": "PROD",
-      "lastBuildTimeStamp": "2024-06-24T02:34:08.454Z",
-      "lastPackageTimeStamp": "2024-06-24T02:34:10.833Z",
-      "distZipFilename": "uiMutations-704f737430597552755a-build.zip",
+      "lastBuildTimeStamp": "2024-07-11T22:40:23.342Z",
+      "lastPackageTimeStamp": "2024-07-11T22:40:26.822Z",
+      "distZipFilename": "uiMutations-3358625a55492f6c3333-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-ampdemo-dev-31c28-deployment",
-        "s3Key": "amplify-builds/uiMutations-704f737430597552755a-build.zip"
+        "s3Key": "amplify-builds/uiMutations-3358625a55492f6c3333-build.zip"
       },
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-ampdemo-dev-31c28-deployment/amplify-cfn-templates/function/uiMutations-cloudformation-template.json",
         "logicalId": "functionuiMutations"
       },
-      "lastPushTimeStamp": "2024-06-24T02:35:27.974Z",
+      "lastPushTimeStamp": "2024-07-11T22:41:45.398Z",
       "output": {
         "LambdaExecutionRoleArn": "arn:aws:iam::058264205854:role/ampdemoLambdaRole8f0d3cd7-dev",
         "Region": "eu-west-1",
@@ -65,7 +65,7 @@
         "Name": "uiMutations-dev",
         "LambdaExecutionRole": "ampdemoLambdaRole8f0d3cd7-dev"
       },
-      "lastPushDirHash": "Jk+gN+pwJgJDaA8+Wl1TMfhKQic="
+      "lastPushDirHash": "vjuCLiNkmNWbfZNgK0G/A5HY7EU="
     }
   },
   "api": {
@@ -94,7 +94,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-ampdemo-dev-31c28-deployment/amplify-cfn-templates/api/uiBackend-cloudformation-template.json",
         "logicalId": "apiuiBackend"
       },
-      "lastPushTimeStamp": "2024-06-24T02:35:26.928Z",
+      "lastPushTimeStamp": "2024-07-11T22:41:44.466Z",
       "output": {
         "ApiName": "uiBackend",
         "RootUrl": "https://w0559i4260.execute-api.eu-west-1.amazonaws.com/dev",

@@ -1,0 +1,11 @@
+{
+  "headers": {
+    "x-JWT": "SESSIONTOKEN"
+  },
+  "pathParameters": {
+    "proxy": "get_workers"
+  },  
+  "queryStringParameters": {
+    "params": "{\"repos\": [\"sign-demo\",\"encryption-example\"]}"
+  }
+}

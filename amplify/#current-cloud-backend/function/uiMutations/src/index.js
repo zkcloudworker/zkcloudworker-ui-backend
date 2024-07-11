@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+const { Client } = require('mina-signer');
 const { signUp, updateAccount } = require('./resources/accounts.js');
 
 /**
@@ -9,6 +10,19 @@ const { signUp, updateAccount } = require('./resources/accounts.js');
  * @returns { success: true | false, data: any | null, error: any | null }
  */
 async function callMethod(name, data, JWT) {
+  // if it contains a signature we need to verify it !
+  if (data.signed) {
+    let network = data.chain.networkID.replace('mina:','');
+    const client = new Client({ network: network });
+    let message = JSON.parse(data.signed);
+    let ok = client.verifyMessage(message);
+    console.log("Verified signature: ", ok);
+    if (!ok) return {
+      success: false, data: null,
+      error: "Invalid signature or signed data"
+    }
+  }
+
   const user = { uid: '1234' }; // must ne extracted from JWT
   switch (name) {
     case 'signup': return await signUp(data, user); break;

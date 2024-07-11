@@ -3,6 +3,6 @@
     "proxy": "get_accounts"
   },  
   "queryStringParameters": {
-    "params": "{\"id\": \"B62qpbqLB1pabZUu4oaDKFmv72DtHWnFxGK8aucNZHxS1cDmmsrrpVp\"}"
+    "params": {"id":"B62qpbqLB1pabZUu4oaDKFmv72DtHWnFxGK8aucNZHxS1cDmmsrrpVp","chain":{"networkID":"mina:testnet"},"signedData":"{\"signature\":{\"field\":\"25518583885213506170743928311084473689863325873816679622483691583854277181264\",\"scalar\":\"18393604728366955937423874660939527229942390719000094137720953016598538540048\"},\"publicKey\":\"B62qpbqLB1pabZUu4oaDKFmv72DtHWnFxGK8aucNZHxS1cDmmsrrpVp\",\"data\":\"{\\\"id\\\":\\\"B62qpbqLB1pabZUu4oaDKFmv72DtHWnFxGK8aucNZHxS1cDmmsrrpVp\\\"}\"}"}
   }
 }
