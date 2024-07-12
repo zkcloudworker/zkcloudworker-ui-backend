@@ -30,7 +30,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-ampdemo-dev-31c28-deployment/amplify-cfn-templates/function/uiQueries-cloudformation-template.json",
         "logicalId": "functionuiQueries"
       },
-      "lastPushTimeStamp": "2024-07-11T22:41:45.398Z",
+      "lastPushTimeStamp": "2024-07-11T23:22:02.437Z",
       "output": {
         "LambdaExecutionRoleArn": "arn:aws:iam::058264205854:role/ampdemoLambdaRole7209ac61-dev",
         "Region": "eu-west-1",
@@ -46,18 +46,18 @@
       "service": "Lambda",
       "lastDevBuildTimeStamp": "2024-06-23T22:24:53.212Z",
       "lastBuildType": "PROD",
-      "lastBuildTimeStamp": "2024-07-11T22:40:23.342Z",
-      "lastPackageTimeStamp": "2024-07-11T22:40:26.822Z",
-      "distZipFilename": "uiMutations-3358625a55492f6c3333-build.zip",
+      "lastBuildTimeStamp": "2024-07-11T23:20:42.111Z",
+      "lastPackageTimeStamp": "2024-07-11T23:20:45.280Z",
+      "distZipFilename": "uiMutations-59586a4e6f43434c436f-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-ampdemo-dev-31c28-deployment",
-        "s3Key": "amplify-builds/uiMutations-3358625a55492f6c3333-build.zip"
+        "s3Key": "amplify-builds/uiMutations-59586a4e6f43434c436f-build.zip"
       },
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-ampdemo-dev-31c28-deployment/amplify-cfn-templates/function/uiMutations-cloudformation-template.json",
         "logicalId": "functionuiMutations"
       },
-      "lastPushTimeStamp": "2024-07-11T22:41:45.398Z",
+      "lastPushTimeStamp": "2024-07-11T23:22:03.141Z",
       "output": {
         "LambdaExecutionRoleArn": "arn:aws:iam::058264205854:role/ampdemoLambdaRole8f0d3cd7-dev",
         "Region": "eu-west-1",
@@ -65,7 +65,7 @@
         "Name": "uiMutations-dev",
         "LambdaExecutionRole": "ampdemoLambdaRole8f0d3cd7-dev"
       },
-      "lastPushDirHash": "vjuCLiNkmNWbfZNgK0G/A5HY7EU="
+      "lastPushDirHash": "yO1iG9cwTo/Ph3qj0v8BXxXb/VI="
     }
   },
   "api": {
@@ -94,7 +94,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-ampdemo-dev-31c28-deployment/amplify-cfn-templates/api/uiBackend-cloudformation-template.json",
         "logicalId": "apiuiBackend"
       },
-      "lastPushTimeStamp": "2024-07-11T22:41:44.466Z",
+      "lastPushTimeStamp": "2024-07-11T23:22:02.439Z",
       "output": {
         "ApiName": "uiBackend",
         "RootUrl": "https://w0559i4260.execute-api.eu-west-1.amazonaws.com/dev",

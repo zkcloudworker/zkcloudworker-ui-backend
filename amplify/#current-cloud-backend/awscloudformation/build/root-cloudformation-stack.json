@@ -169,7 +169,7 @@
         "TemplateURL": "https://s3.amazonaws.com/amplify-ampdemo-dev-31c28-deployment/amplify-cfn-templates/function/uiMutations-cloudformation-template.json",
         "Parameters": {
           "deploymentBucketName": "amplify-ampdemo-dev-31c28-deployment",
-          "s3Key": "amplify-builds/uiMutations-3358625a55492f6c3333-build.zip",
+          "s3Key": "amplify-builds/uiMutations-59586a4e6f43434c436f-build.zip",
           "env": "dev"
         }
       }

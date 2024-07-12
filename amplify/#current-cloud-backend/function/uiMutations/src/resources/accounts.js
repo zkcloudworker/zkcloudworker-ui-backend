@@ -16,7 +16,8 @@ async function signUp(params, user) {
           email: '',
           fullName: 'No Name',
           preferences: '{}',
-          discord: params.discord || ''
+          discord: params.discord || '',
+          JWT: params.JWT || ''
       }
   };
   console.log("signUp putParams: ", putParams);
@@ -76,7 +77,8 @@ async function updateAccount(params, user) {
           email: params.email,
           fullName: params.fullName,
           preferences: params.preferences,
-          discord: params.discord || ''
+          discord: params.discord || '',
+          JWT: params.JWT || ''
       }
   };
   console.log("signUp putParams: ", putParams);
